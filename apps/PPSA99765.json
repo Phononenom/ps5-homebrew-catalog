@@ -1,0 +1,14 @@
+{
+  "titleid": "PPSA99765",
+  "name": "DreamXcast",
+  "kind": "app",
+  "category": "emulators",
+  "description": "Native Dreamcast emulation on PS5 with white DVD-style CoverFlow cases, angled neighbours and subtle reflections.",
+  "license": "GPL-3.0",
+  "author": "Yahballon",
+  "version": "ps5-dreamcastx-v0.2.2",
+  "source_repo": "https://github.com/Yahballon/DreamXcast",
+  "artifact_url": "https://github.com/Yahballon/DreamXcast/releases/download/ps5-dreamcastx-v0.2.2/PPSA99765.zip",
+  "sha256": "1da561f493778c9916137480a911ee206445e853a4d9653621c21f9590e19721",
+  "icon_url": "https://i.ibb.co/V04xb7qb/icon0.png"
+}
