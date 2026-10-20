@@ -1,0 +1,14 @@
+{
+  "titleid": "PPSA99393",
+  "name": "PS5SX3",
+  "kind": "app",
+  "category": "emulators",
+  "description": "A native PS3 for the PlayStation 5.",
+  "license": "Unlicensed",
+  "author": "SwordPDF",
+  "version": "1.000.100",
+  "source_repo": "https://github.com/Phononenom/RPS5SX3/",
+  "artifact_url": "https://github.com/Phononenom/RPS5SX3/releases/download/01.000.100/PPSA99393.zip",
+  "sha256": "b58ee103426ec7fa79b18121cdd42c149338c24eda6fb4e941d992f123613415",
+  "icon_url": "https://github.com/Phononenom/RPS5SX3/blob/main/sce_sys/icon0.png"
+}
