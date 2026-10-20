@@ -1,0 +1,14 @@
+{
+  "titleid": "PPSA99009",
+  "name": "ProsperoLichess",
+  "kind": "game",
+  "category": "homebrew-games",
+  "description": "Native Lichess client for PS5: play online chess with the controller.",
+  "license": "GPL-3.0",
+  "author": "BlackBearReloaded",
+  "version": "01.000.000",
+  "source_repo": "https://github.com/Phononenom/ProsperoLichess",
+  "artifact_url": "https://github.com/Phononenom/ProsperoLichess/releases/download/01.000.000/PPSA99009.zip",
+  "sha256": "e87cdb55e174b837c179ab735786e5e92b71b3f1af6772b1f68b5fbd4a189b5f",
+  "icon_url": "https://i.ibb.co/QjQqskyC/icon0.png"
+}
