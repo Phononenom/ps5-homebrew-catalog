@@ -1,0 +1,14 @@
+{
+  "titleid": "PPSA99209",
+  "name": "PS5GBAX",
+  "kind": "app",
+  "category": "emulators",
+  "description": "One short sentence about the game.",
+  "license": "GPL-3.0",
+  "author": "Yahballon",
+  "version": "v2.2.1",
+  "source_repo": "https://github.com/Yahballon/PS5GBAX",
+  "artifact_url": "https://github.com/Yahballon/PS5GBAX/releases/download/v2.2.1/PPSA99209.zip",
+  "sha256": "822acda816a307621c6a13a07019e112b424529ca30597b84a0a755ac4abf7b8",
+  "icon_url": "https://raw.githubusercontent.com/Yahballon/PS5GBAX/refs/heads/main/gba/sce_sys/icon0.png"
+}
