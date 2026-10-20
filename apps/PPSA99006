@@ -1,0 +1,14 @@
+{
+  "titleid": "PPSA99006",
+  "name": "ProsperoPuzzles",
+  "kind": "game",
+  "category": "homebrew-games",
+  "description": "Collection of puzzle games for PS5.",
+  "license": "GPL-3.0",
+  "author": "BlackBearReloaded",
+  "version": "01.000.010",
+  "source_repo": "https://github.com/Phononenom/ProsperoPuzzles",
+  "artifact_url": "https://github.com/Phononenom/ProsperoPuzzles/releases/download/01.000.010/PPSA99006.zip",
+  "sha256": "dc72f5a35dc240bc1cc675782398fee7962d3722beb53ed1cc9780ae83969091",
+  "icon_url": "https://i.ibb.co/hJBvZ0CR/icon0.png"
+}
