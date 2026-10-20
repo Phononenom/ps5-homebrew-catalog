@@ -6,7 +6,7 @@
   "description": "A native PlayStation 5 homebrew front-end that browses your PS2 ISOs and boots them through selectable PS2 emulator packages.",
   "license": "GPL-3.0",
   "author": "SwordPDF",
-  "version": "v1.00",
+  "version": "v01.00",
   "source_repo": "https://github.com/Phononenom/Twiso",
   "artifact_url": "https://github.com/Phononenom/Twiso/releases/download/v01.00/PPSA99202-app.zip",
   "sha256": "04f6c4d87e3848ee2fad4c16cb1c9bc0eba8fb7daa665185c56e4df12a391abe",
