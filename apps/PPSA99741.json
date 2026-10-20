@@ -1,0 +1,14 @@
+{
+  "titleid": "PPSA9971",
+  "name": "PS5 Ebook Reader",
+  "kind": "app",
+  "category": "video",
+  "description": "The Ebook Reader bookshelf on PS5",
+  "license": "GPL-3.0",
+  "author": "Yahballon",
+  "version": "ebook-reader-v0.2.6",
+  "source_repo": "https://github.com/Yahballon/PS5_Ebook_Reader",
+  "artifact_url": "https://github.com/Yahballon/PS5_Ebook_Reader/releases/download/ebook-reader-v0.2.6/PPSA99741.zip",
+  "sha256": "25c6158761490fcb632379a1dd1808a9e0b3b9df5a680c4384af9e3010446aba",
+  "icon_url": "https://i.ibb.co/G4JYvShK/icon0.png"
+}
