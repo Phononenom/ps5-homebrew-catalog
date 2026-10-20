@@ -1,0 +1,14 @@
+{
+  "titleid": "PPSA99399",
+  "name": "Vita3K",
+  "kind": "app",
+  "category": "emulators",
+  "description": "One short sentence about the app.",
+  "license": "GPL-2.0",
+  "author": "tsuramatsu1",
+  "version": "alpha",
+  "source_repo": "https://github.com/Phononenom/Vita3K-PS5",
+  "artifact_url": "https://github.com/Phononenom/Vita3K-PS5/releases/download/alpha/PPSA99399.zip",
+  "sha256": "eed071967302a4fed4c93be0d0455f9eb4310b7e45af91c1085d54aeaff84082",
+  "icon_url": "https://raw.githubusercontent.com/Phononenom/Vita3K-PS5/refs/heads/ps5/vita3k/ps5/sce_sys/icon0.png"
+}
