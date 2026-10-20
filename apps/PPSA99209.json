@@ -3,7 +3,7 @@
   "name": "PS5GBAX",
   "kind": "app",
   "category": "emulators",
-  "description": "One short sentence about the game.",
+  "description": "A native GBA emulator for jailbroken PS5.",
   "license": "GPL-3.0",
   "author": "Yahballon",
   "version": "v2.2.1",
