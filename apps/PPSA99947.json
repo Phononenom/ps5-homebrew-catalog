@@ -1,0 +1,14 @@
+{
+  "titleid": "PPSA99947",
+  "name": "PSJukebox",
+  "kind": "app",
+  "category": "music",
+  "description": "A jukebox for your PS5.",
+  "license": "GPL-3.0",
+  "author": "Yahballon",
+  "version": "v0.1.24",
+  "source_repo": "https://github.com/Yahballon/PSJukebox",
+  "artifact_url": "https://github.com/Yahballon/PSJukebox/releases/download/v0.1.24/PPSA99947.zip",
+  "sha256": "0a2e26eba6dfc0b2483d54777cf09ce8135a308fdef5abcaefaa26b9d4cac6e2",
+  "icon_url": "https://i.ibb.co/9kqQDwzg/icon0.png"
+}
