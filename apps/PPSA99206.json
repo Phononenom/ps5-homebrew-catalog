@@ -1,0 +1,14 @@
+{
+  "titleid": "PPSA99206",
+  "name": "PS5N64X",
+  "kind": "app",
+  "category": "emulators",
+  "description": "A native N64 emulator for jailbroken PS5",
+  "license": "GPL-3.0",
+  "author": "Yahballon",
+  "version": "v1.0.9",
+  "source_repo": "https://github.com/Yahballon/PS5N64X",
+  "artifact_url": "https://github.com/Yahballon/PS5N64X/releases/download/v1.0.9/PPSA99206.zip",
+  "sha256": "64efaf6c0e50d1b221b588674d54fd0d27ea3af743f6408a44e1839f1133236f",
+  "icon_url": "https://raw.githubusercontent.com/Yahballon/PS5N64X/refs/heads/main/n64/sce_sys/icon0.png"
+}

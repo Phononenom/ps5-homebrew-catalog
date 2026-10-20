@@ -1,0 +1,14 @@
+{
+  "titleid": "PPSA99204",
+  "name": "PS5NESX",
+  "kind": "app",
+  "category": "emulators",
+  "description": "A native NES emulator for jailbroken PS5",
+  "license": "GPL-3.0",
+  "author": "Yahballon",
+  "version": "ps5nesx-v1.0.28",
+  "source_repo": "https://github.com/Yahballon/PS5NESX",
+  "artifact_url": "https://github.com/Yahballon/PS5NESX/releases/download/ps5nesx-v1.0.28/PPSA99204.zip",
+  "sha256": "09f72454d2e1de9e8bddfaaa00628aaef5ff8a6f74640df568a1f3ea0afb2733",
+  "icon_url": "https://i.ibb.co/rR0GwRqP/icon0.png"
+}

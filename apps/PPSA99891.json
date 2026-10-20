@@ -1,0 +1,14 @@
+{
+  "titleid": "PPSA99891",
+  "name": "ThemeChanger",
+  "kind": "tool",
+  "category": "utilities",
+  "description": "PS5 Wallpaper Manager 9660+ Live Wallpapers 4K",
+  "license": "GPL-3.0",
+  "author": "Yahballon",
+  "version": "themechanger-v0.3.24",
+  "source_repo": "https://github.com/Yahballon/ThemeChanger",
+  "artifact_url": "https://github.com/Yahballon/ThemeChanger/releases/download/themechanger-v0.3.24/PPSA99891.zip",
+  "sha256": "a8b6f4582c8755ff0abd0e9f0c3ff082eacbc5b54019ffa5b8bfc4e99aebae30",
+  "icon_url": "https://raw.githubusercontent.com/Yahballon/ThemeChanger/refs/heads/main/homebrew/themechanger/assets/icon0.png"
+}
