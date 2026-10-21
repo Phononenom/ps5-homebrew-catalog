@@ -6,9 +6,9 @@
   "description": "A native PS3 for the PlayStation 5.",
   "license": "Unlicensed",
   "author": "SwordPDF",
-  "version": "01.000.120",
+  "version": "01.000.121",
   "source_repo": "https://github.com/Phononenom/RPS5SX3",
-  "artifact_url": "https://github.com/Phononenom/RPS5SX3/releases/download/01.000.120/PPSA99393.zip",
-  "sha256": "05c27bfa9f335320ea1652c19a28a79c2e9ab1880bea1aeaa76545f5c78c5a26",
+  "artifact_url": "https://github.com/Phononenom/RPS5SX3/releases/download/01.000.121/PPSA99393.zip",
+  "sha256": "a4891b4f2e87b4a945432bc2429c9b24ff4f5dfb728dfa40a3805c1540f1588f",
   "icon_url": "https://i.ibb.co/B2drbMnY/icon0.png"
 }
