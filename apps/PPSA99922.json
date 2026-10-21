@@ -6,9 +6,9 @@
   "description": "Snes9x (Super Nintendo) as a native PS5 app.",
   "license": "GPL-3.0",
   "author": "MisterTemaki",
-  "version": "v2.7",
+  "version": "v2.8",
   "source_repo": "https://github.com/MisterTemaki/snes9xPS5",
-  "artifact_url": "https://github.com/MisterTemaki/snes9xPS5/releases/download/v2.7/Snes9xPS5-v2.7-PPSA99922.zip",
-  "sha256": "51c0643ceef320c630c4a2f34d8a527dd96bc3c5ffd1a94388b4f0457ec8c1c9",
+  "artifact_url": "https://github.com/MisterTemaki/snes9xPS5/releases/download/v2.7/Snes9xPS5-v2.8-PPSA99922.zip",
+  "sha256": "e534c5c0f7c9f0b307020fc16d184c2cb8a3c02d852c87a02e1c9cb5c8878b19",
   "icon_url": "https://raw.githubusercontent.com/MisterTemaki/snes9xPS5/refs/heads/main/ps5/app/sce_sys/icon0.png"
 }
