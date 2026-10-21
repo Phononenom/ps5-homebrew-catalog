@@ -198,7 +198,7 @@ class SiteBuildTests(unittest.TestCase):
         self.assertLess(detail.index('data-react="likes"'), detail.index('class="article"'))
         self.assertIn('data-react="comments"', detail)
         self.assertIn('href="https://github.com/darkxex/ps5-homebrew-catalog/discussions?discussions_q=PPSA01234"', detail)
-        self.assertIn("connect-src 'self' https://raw.githubusercontent.com;", (self.out / "_headers").read_text(encoding="utf-8"))
+        self.assertIn("connect-src 'self' https://raw.githubusercontent.com https://translate.googleapis.com;", (self.out / "_headers").read_text(encoding="utf-8"))
         self.assertIn("/api/*/manifest.sig\n  Content-Type: application/octet-stream",
                       (self.out / "_headers").read_text(encoding="utf-8"))
         # The manifest names every JSON file of the API by its hash; the build itself never signs.

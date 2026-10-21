@@ -296,7 +296,9 @@
     name.id = "tv-detail-name";
     info.appendChild(name);
     info.appendChild(make("p", "tv-detail__by", I18N.t("tv.by", { author: app.author })));
-    info.appendChild(make("p", "tv-detail__desc", app.description));
+    var desc = make("p", "tv-detail__desc", app.description);
+    info.appendChild(desc);
+    I18N.translate(app.description, function (text) { desc.textContent = text; });
     var attrs = make("dl", "tv-attrs");
     attr(attrs, I18N.t("d.version"), app.version);
     attr(attrs, I18N.t("d.format"), app.format_label);
