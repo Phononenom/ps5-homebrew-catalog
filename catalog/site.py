@@ -17,7 +17,7 @@ substituted.
 
 Icons are fetched and re-served from the site, resized to WebP when Pillow is
 installed. With an icon cache directory, an icon is fetched again only when its
-cached copy is older than a day (an icon URL may name a branch, where the file
+cached copy is older than an hour (an icon URL may name a branch, where the file
 can change); entries no longer used are pruned. A failed icon falls back to a placeholder instead of failing the
 build.
 """
@@ -361,7 +361,7 @@ def png_icons(data: bytes) -> dict[int, bytes]:
     return icons
 
 
-ICON_MAX_AGE = 24 * 60 * 60  # seconds a cached original is used before it is fetched again
+ICON_MAX_AGE = 60 * 60  # seconds a cached original is used before it is fetched again
 
 
 def _icon(url: str, cache: Path | None, fetch=None) -> tuple[bytes, str, bytes]:
@@ -610,6 +610,7 @@ def build_site(out: Path, apps_dir: Path, report: Report, base: str = DEFAULT_BA
     own = {name: theme_obj.directory / name for name in ("app.js", "favicon.svg")}
     js = assets.add("app", "js", (own["app.js"] if own["app.js"].is_file() else shared_dir / "app.js").read_bytes())
     i18n = assets.add("i18n", "js", (shared_dir / "i18n.js").read_bytes())
+    analytics = assets.add("analytics", "js", (shared_dir / "analytics.js").read_bytes())
     placeholder = assets.add("placeholder", "svg", (shared_dir / "placeholder.svg").read_bytes())
     shutil.copyfile(own["favicon.svg"] if own["favicon.svg"].is_file() else shared_dir / "favicon.svg",
                     root / "favicon.svg")
@@ -835,6 +836,7 @@ def build_site(out: Path, apps_dir: Path, report: Report, base: str = DEFAULT_BA
         "css": css,
         "js": js,
         "i18n": i18n,
+        "analytics": analytics,
         "fonts": e(FONT_URL.format(families=theme_obj.fonts)),
         "theme_color": theme_obj.color,
         "commit": e(commit),
@@ -972,9 +974,11 @@ def build_site(out: Path, apps_dir: Path, report: Report, base: str = DEFAULT_BA
               added=added, news=news_items)
 
     # Header and redirect rules, for a host that reads _headers and _redirects; GitHub Pages ignores them.
-    csp = ("default-src 'self'; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com; "
-           "font-src https://fonts.gstatic.com; script-src 'self'; "
-           "connect-src 'self' https://raw.githubusercontent.com https://translate.googleapis.com; "
+    csp = ("default-src 'self'; img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com; "
+           "style-src 'self' https://fonts.googleapis.com; "
+           "font-src https://fonts.gstatic.com; script-src 'self' https://www.googletagmanager.com; "
+           "connect-src 'self' https://raw.githubusercontent.com https://translate.googleapis.com "
+           "https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; "
            "base-uri 'self'; form-action 'none'; frame-ancestors 'none'")
     (out / "_headers").write_text(f"""/*
   X-Content-Type-Options: nosniff
