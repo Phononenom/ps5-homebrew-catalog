@@ -6,9 +6,9 @@
   "description": "A native GBA emulator for jailbroken PS5.",
   "license": "GPL-3.0",
   "author": "Yahballon",
-  "version": "v2.2.1",
+  "version": "v2.3.0",
   "source_repo": "https://github.com/Yahballon/PS5GBAX",
-  "artifact_url": "https://github.com/Yahballon/PS5GBAX/releases/download/v2.2.1/PPSA99209.zip",
-  "sha256": "822acda816a307621c6a13a07019e112b424529ca30597b84a0a755ac4abf7b8",
+  "artifact_url": "https://github.com/Yahballon/PS5GBAX/releases/download/v2.3.0/PPSA99209.zip",
+  "sha256": "07ee5cd5d17edf12b084296662341ed32a4a9186b1f7246197ab027d443cd6ae",
   "icon_url": "https://raw.githubusercontent.com/Yahballon/PS5GBAX/refs/heads/main/gba/sce_sys/icon0.png"
 }
