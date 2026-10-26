@@ -151,3 +151,27 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           MERGE_TOKEN: ${{ steps.token.outputs.token }}
+
+  notify:
+    name: Ask darkxex to review what the bot did not merge
+    # Every pull request used to ask darkxex for a review through CODEOWNERS, so each one sent an
+    # email. Now only a pull request the bot did not merge (a check failed, the release scan
+    # stopped it, or it is not a developer's own release bump) asks for one.
+    needs: [submission, scan, bump]
+    if: ${{ !cancelled() && needs.bump.outputs.eligible != 'true' && github.event.pull_request.user.login != 'darkxex' && !github.event.pull_request.draft }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment: catalog-bot
+    steps:
+      - id: token
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        with:
+          client-id: ${{ vars.CATALOG_BOT_CLIENT_ID }}
+          private-key: ${{ secrets.CATALOG_BOT_PRIVATE_KEY }}
+          permission-pull-requests: write
+      - name: Request the review
+        run: gh pr edit "$NUMBER" --repo "$REPO" --add-reviewer darkxex
+        env:
+          GH_TOKEN: ${{ steps.token.outputs.token }}
+          REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.pull_request.number }}
