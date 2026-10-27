@@ -4,11 +4,11 @@
   "kind": "app",
   "category": "emulators",
   "description": "Snes9x (Super Nintendo) as a native PS5 app.",
-  "license": "null",
+  "license": null,
   "author": "MisterTemaki",
-  "version": "null",
-  "source_repo": "null",
-  "artifact_url": "null",
-  "sha256": "null",
-  "icon_url": "null"
+  "version": null,
+  "source_repo": null,
+  "artifact_url": null,
+  "sha256": null,
+  "icon_url": null
 }
