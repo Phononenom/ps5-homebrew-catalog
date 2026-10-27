@@ -70,6 +70,7 @@ The first twelve fields after `schema` are the app's record, exactly as in
 
 | Field | Type | Meaning |
 | --- | --- | --- |
+| `internalOnly` | boolean | Only present, and `true`, when the developer asks for the app to be installed on internal storage only. A store installs it there regardless of the user's chosen location. Absent means any location. |
 | `schema` | integer | Schema revision of this file; see [Versioning of the API](#versioning-of-the-api). |
 | `shared` (in `index.json` and `versions.json`) | array / object | Only present when apps share a title ID: the entries (or versions) of every app that is not the first to use its title ID. `apps` lists one app per title ID, as before, so a store released before shared title IDs keeps working. A client that knows shared title IDs reads both. |
 | `id` | string | The app's identity in the catalog: its title ID, or `<TITLEID>-<owner>` for an app that shares its title ID with an earlier one. Use it for every address (`apps/<id>.json`, `icons/<id>.png`, `app/<id>/`) and as the key in `versions.json`. `titleid` is what the console knows the app as. |

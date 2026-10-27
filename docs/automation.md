@@ -97,8 +97,8 @@ squash-merged by the catalog's GitHub App when **all** of this holds:
 
 - it changes exactly one file, an `apps/<TITLEID>.json` (or `<TITLEID>-<owner>.json`): a removal or any other file always
   waits for a maintainer;
-- **a release bump** (the file exists): only `version`, `artifact_url`, `sha256`, `icon_url` and
-  `description` differ from the listed record, the file is a new one, it is a release file of the same
+- **a release bump** (the file exists): only `version`, `artifact_url`, `sha256`, `icon_url`,
+  `description`, `license` and `internalOnly` (added or removed) differ from the listed record, the file is a new one, it is a release file of the same
   `source_repo`, a changed icon stays in that repository, and the release is the **newest** one
   of that repository;
 - **a reservation released** (the file exists and was a reservation): the author is the account
@@ -425,7 +425,7 @@ public GitHub for native PS5 apps the catalog doesn't list yet. It only reads
 other repositories: nothing is downloaded and developers aren't contacted.
 
 1. **Find.** Code searches for `sce_sys/param.json` files and build scripts
-   with a `PPSA` title ID (strong signals), README install instructions and
+   with a title ID (strong signals; any four letters and five digits, not `CUSA` or `NPXS`), README install instructions and
    mentions of ShadowMountPlus, `.ffpfsc` or `.ffpkg`; repository searches
    (`ps5 homebrew`, the `ps5` and `ps5-homebrew` topics, `prospero` in the
    name); and the other repositories of developers who are listed or have a

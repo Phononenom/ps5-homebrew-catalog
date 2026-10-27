@@ -47,7 +47,11 @@ then reviews and merges it.
 
 Your title ID is the app's permanent identity: the record's filename, the
 `titleId` in `sce_sys/param.json`, and the folder name on the console. It is
-four uppercase letters followed by five digits.
+four uppercase letters followed by five digits. `PPSA` is the usual prefix, but
+a custom one such as `FAKE77031` is accepted too, as long as it isn't `CUSA`
+(PS4 titles) or `NPXS` (system titles); ShadowMountPlus skips `NPXS`. Digits in
+the letters part (`F4K377031`) aren't accepted, because ShadowMountPlus ignores
+such folders.
 
 - Check whether `apps/<TITLEID>.json` already exists. Title IDs are first come,
   first served. If it belongs to a different app, you can still list yours as
@@ -212,7 +216,7 @@ repository and publish a new release; the next scan picks it up, or you can
 | The release has several installable files | Attach one `.zip` of the app folder. Keep other files (`.elf` payloads, installers, source archives) out of the release, or name the app's file the way your README says. |
 | No `sce_sys/param.json` at the release tag | Commit `sce_sys/param.json` with your `titleId` and `contentVersion`. If your build generates it, commit a copy where the catalog can read it, at the root or in the folder the README names as the app. |
 | `param.json` is in a sample or test folder | Put the app's own `sce_sys/param.json` at the root, or point your README at the folder that holds the app. |
-| The title ID isn't a PS5 (`PPSA`) title ID | Use a `PPSA` plus five digits title ID, such as `PPSA01234`. |
+| The title ID is rejected | Use four uppercase letters plus five digits, such as `PPSA01234` or `FAKE77031`. `CUSA` (PS4) and `NPXS` (system) prefixes, digits among the letters (`F4K377031`) and lowercase aren't accepted. |
 | GitHub detects no license | Not an error: the app is listed as `Unlicensed`. Add a `LICENSE` file GitHub recognizes (such as `GPL-3.0` or `MIT`) to show it instead. |
 | No description to draft from | Add a repository description or a short README paragraph saying what the app does. |
 | Native, but no release yet | Publish your first release as above. Only you can do that. |
