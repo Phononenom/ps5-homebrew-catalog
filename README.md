@@ -96,7 +96,8 @@ Read **[Submitting an app](docs/submitting.md)**. In short:
    at the moment ([artifact formats](docs/artifact-formats.md)).
 2. Publish it in a GitHub release of your public repository, **tagged with the
    app's version** (e.g. `v1.2.0`). The tag is the version the catalog shows.
-3. Add `apps/<TITLEID>.json` from the account that owns that repository. From any other
+3. Add `apps/<TITLEID>.json` from the account that owns that repository (the
+   [submit page](https://prosperostore.net/submit/) prepares it from your repository). From any other
    account the pull request is accepted only after a maintainer approves it by hand.
 4. Open a pull request and fix anything the checks report.
 

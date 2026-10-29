@@ -48,7 +48,8 @@ then reviews and merges it.
 Your title ID is the app's permanent identity: the record's filename, the
 `titleId` in `sce_sys/param.json`, and the folder name on the console. It is
 four uppercase letters followed by five digits. `PPSA` is the usual prefix, but
-a custom one such as `FAKE77031` is accepted too, as long as it isn't `CUSA`
+a custom one such as `FAKE77031` is accepted too (an older store, such as ProsperoStore before
+1.000.110, does not show it), as long as it isn't `CUSA`
 (PS4 titles) or `NPXS` (system titles); ShadowMountPlus skips `NPXS`. Digits in
 the letters part (`F4K377031`) aren't accepted, because ShadowMountPlus ignores
 such folders.
@@ -105,7 +106,18 @@ lowercase hexadecimal, without a `sha256:` prefix.
 
 ## 4. Write the record
 
-Fork this repository and add `apps/<TITLEID>.json`:
+**The quick way:** the [submit page](https://prosperostore.net/submit/) does steps 3 and 4 for
+you. Paste your repository and it reads your releases in your browser, takes the title ID and name from
+`sce_sys/param.json` at the release tag and the digest GitHub reports, and leaves you to choose the release and its
+file, the type, category and description. Its button opens the record in GitHub's editor, which forks this repository
+and opens the pull request from your account (the editor shows the file on one line; that is valid JSON).
+If the repository doesn't commit `sce_sys/param.json`, it asks for the release's `.zip` from your computer instead:
+the file is read in your browser, never uploaded, and its SHA-256 must match the one GitHub lists for that release
+file, so it is the real one. The icon is a link: the repository's `sce_sys/icon0.png` when it exists, or any image
+link you paste. GitHub lets a page make 60 requests an hour without sign-in; if you hit that, the page offers to sign
+you in with GitHub, which raises it, and asks for no permissions.
+
+**By hand:** fork this repository and add `apps/<TITLEID>.json`:
 
 ```json
 {
@@ -186,6 +198,10 @@ new pull request from the same account. That account must also own the
 `source_repo` you add. The card becomes downloadable after the merge.
 
 ## Updating your app
+
+Your developer page, `https://prosperostore.net/dev/<your GitHub login>/`, lists your apps with their
+version, downloads, likes and comments, and an **Edit listing** button on each that opens its record in
+GitHub's editor to propose a change as a pull request.
 
 Usually nothing to do: the catalog checks for new releases every day and opens
 a pull request that moves your listing to the newest one (pre-releases

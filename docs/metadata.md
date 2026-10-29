@@ -10,7 +10,7 @@ strings; only [reservations](#reservations-coming-soon) use `null`, and
 
 | Field | Max length | Rules |
 | --- | ---: | --- |
-| `titleid` | 9 | Four uppercase letters and five digits, e.g. `PPSA01234`. Custom prefixes such as `FAKE77031` are allowed, except `CUSA` (PS4) and `NPXS` (system). Must equal the start of the filename (see [Shared title IDs](#shared-title-ids)), and should equal the app's `titleId` in `sce_sys/param.json`. `PPSA99999` is reserved. |
+| `titleid` | 9 | Four uppercase letters and five digits, e.g. `PPSA01234`. Custom prefixes such as `FAKE77031` are allowed, except `CUSA` (PS4) and `NPXS` (system); such an app is listed under `shared` in the API, which ProsperoStore before 1.000.110 does not show. Must equal the start of the filename (see [Shared title IDs](#shared-title-ids)), and should equal the app's `titleId` in `sce_sys/param.json`. `PPSA99999` is reserved. |
 | `name` | 64 | Display name. Unique across the catalog, ignoring case. |
 | `kind` | 4 | `app`, `game` or `tool`. |
 | `category` | 16 | One of the keys under [Categories](#categories), such as `emulators` or `video`. |
